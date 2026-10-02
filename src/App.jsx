@@ -76,7 +76,7 @@ export default function App() {
       const errorMessage = {
         id: (Date.now() + 1).toString(),
         sender: 'assistant',
-        text: `**Connection Error**: Unable to reach backend API at \`${API_BASE_URL}\`.\n\nPlease verify that your FastAPI server is running (\`uvicorn main:app --reload\`) and that your \`GOOGLE_API_KEY\` is configured in \`.env\`.`,
+        text: 'Unable to process your request at this time. Please check your connection and try again in a moment.',
         tools_used: [],
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
